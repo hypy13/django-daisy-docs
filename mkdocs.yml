@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: Django Daisy Dashboard
+site_url: https://hy3.ir/docs/
+theme:
+  name: material
+
+plugins:
+  - search
