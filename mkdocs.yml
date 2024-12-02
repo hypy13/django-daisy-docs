@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
 site_name: Django Daisy Dashboard
-site_url: https://hy3.ir/docs/
+site_url: https://hypy13-django-daisy.hf.space/en/admin
 theme:
   name: material
 
@@ -12,4 +12,4 @@ nav:
   - Home: index.md
   - Installation: installation.md
   - Configuration: configuration.md
-  - Development Guide: development-guide.md
+  - Development Guide: development.md

@@ -101,5 +101,3 @@ DAISY_SETTINGS = {
 - **LOAD_FULL_STYLES**: If set to `True`, loads the full DaisyUI library for styling, which can be useful if you have overridden the admin templates.
 - **SHOW_CHANGELIST_FILTER**: Controls whether the changelist filter sidebar is shown by default.
 - **APPS_REORDER**: This allows you to reorder, customize, and modify third-party apps. For example, you can change the name of the `auth` app to `users`, provide a custom icon, or hide it from the sidebar entirely.
-
----
