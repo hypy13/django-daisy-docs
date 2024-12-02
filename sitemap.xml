@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://hy3.ir/docs/</loc>
+         <loc>https://hypy13-django-daisy.hf.space/en/admin/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://hy3.ir/docs/configuration/</loc>
+         <loc>https://hypy13-django-daisy.hf.space/en/admin/configuration/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://hy3.ir/docs/development/</loc>
+         <loc>https://hypy13-django-daisy.hf.space/en/admin/development/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://hy3.ir/docs/installation/</loc>
-         <lastmod>2024-12-02</lastmod>
-    </url>
-    <url>
-         <loc>https://hy3.ir/docs/tabs/</loc>
+         <loc>https://hypy13-django-daisy.hf.space/en/admin/installation/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
 </urlset>
