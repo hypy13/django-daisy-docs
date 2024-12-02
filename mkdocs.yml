@@ -7,3 +7,9 @@ theme:
 
 plugins:
   - search
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Configuration: configuration.md
+  - Development Guide: development-guide.md

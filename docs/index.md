@@ -1,17 +1,23 @@
-# Welcome to MkDocs
+# Welcome to Django Daisy Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to the official documentation for **Django Daisy**. Use the navigation below to explore various sections of the documentation.
 
-## Commands
+## Documentation Sections
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- [Installation Guide](installation.md)
+- [Configuration](configuration.md)
+- [Development Guide](development-guide.md)
 
-## Project layout
+For more information on how to customize and extend Django Daisy, refer to each section.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Additional Resources
+
+- [Live Demo](https://hypy13-django-daisy.hf.space/en/admin/)  
+   **Username**: demo  
+   **Password**: demo
+
+- [GitHub Repository](https://github.com/hypy13/django-daisy/)
+
+- [Demo Video on YouTube](https://www.youtube.com/watch?v=WEKTXu1la9M)
+
+Happy coding!
