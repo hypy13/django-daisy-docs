@@ -287,9 +287,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#explanation" class="md-nav__link">
     <span class="md-ellipsis">
-      Example:
+      Explanation:
     </span>
   </a>
   
@@ -311,7 +311,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example_1" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example:
     </span>
@@ -320,7 +320,31 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#explanation" class="md-nav__link">
+  <a href="#explanation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-global-customizations-in-settingspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Global Customizations in settings.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Global Customizations in settings.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explanation_2" class="md-nav__link">
     <span class="md-ellipsis">
       Explanation:
     </span>
@@ -398,9 +422,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#explanation" class="md-nav__link">
     <span class="md-ellipsis">
-      Example:
+      Explanation:
     </span>
   </a>
   
@@ -422,7 +446,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example_1" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       Example:
     </span>
@@ -431,7 +455,31 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#explanation" class="md-nav__link">
+  <a href="#explanation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-global-customizations-in-settingspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Global Customizations in settings.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Global Customizations in settings.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explanation_2" class="md-nav__link">
     <span class="md-ellipsis">
       Explanation:
     </span>
@@ -461,19 +509,25 @@
 
 <h1 id="configuration">Configuration</h1>
 <h2 id="adding-icons-to-your-apps">Adding Icons To Your Apps</h2>
-<p>To assign a custom icon to a specific app, you can add the <code>icon</code> attribute within the app's <code>AppConfig</code> class located
-in the <code>apps.py</code> file.</p>
-<h3 id="example">Example:</h3>
-<pre><code class="language-python">from django.apps import AppConfig
-from django.utils.translation import gettext_lazy as _
-
-
-class CustomerConfig(AppConfig):
-    name = 'apps.customer'
-    verbose_name = _('Customers')
-    icon = 'fa fa-users-viewfinder'  # Add your icon class here
-
+<ol>
+<li>App Configuration in apps.py</li>
+</ol>
+<p>You can configure app-specific settings in the apps.py file for each application within your Django project. Below is an example of how to customize the Polls app:</p>
+<pre><code class="language-py">class PollsConfig(AppConfig):
+    name = 'polls'  # The name of the app
+    icon = 'fa fa-square-poll-vertical'  # FontAwesome icon for the app (optional)
+    divider_title = &quot;Apps&quot;  # Title of the section divider in the sidebar (optional)
+    priority = 0  # Determines the order of the app in the sidebar (higher values appear first, optional)
+    hide = False  # Set to True to hide the app from the sidebar menu (optional)
 </code></pre>
+<h3 id="explanation">Explanation:</h3>
+<ul>
+<li><strong>name</strong>: The name of the app.</li>
+<li><strong>icon</strong>: An optional FontAwesome icon to display next to the app name in the sidebar.</li>
+<li><strong>divider_title</strong>: The title for the section divider, grouping similar apps together (optional).</li>
+<li><strong>priority</strong>: An optional setting that controls the order of apps in the sidebar; higher values appear at the top.</li>
+<li><strong>hide</strong>: If set to <code>True</code>, the app will be hidden from the sidebar menu.</li>
+</ul>
 <p>Django Daisy uses <strong>FontAwesome v5 Free icons</strong> for dashboard customization. You can browse and choose from the
 available free icons on the <a href="https://fontawesome.com/icons">FontAwesome website</a>.</p>
 <p>Refer to the FontAwesome site for the complete list of available icons.</p>
@@ -481,7 +535,7 @@ available free icons on the <a href="https://fontawesome.com/icons">FontAwesome 
 <p>Django Daisy offers flexible customization options for installed apps, allowing you to modify their appearance, order,
 and behavior in the sidebar without needing direct access to their code. You can achieve this by using
 the <code>APPS_REORDER</code> setting in your <code>settings.py</code> file.</p>
-<h3 id="example_1">Example:</h3>
+<h3 id="example">Example:</h3>
 <pre><code class="language-python">APPS_REORDER = {
     # django auth app
     'auth': {
@@ -497,7 +551,7 @@ the <code>APPS_REORDER</code> setting in your <code>settings.py</code> file.</p>
     }
 }
 </code></pre>
-<h3 id="explanation">Explanation:</h3>
+<h3 id="explanation_1">Explanation:</h3>
 <ul>
 <li><strong><code>app</code></strong>: The app to modify.</li>
 <li><strong><code>icon</code></strong>: Icon name to represent the app in the sidebar.</li>
@@ -506,6 +560,45 @@ the <code>APPS_REORDER</code> setting in your <code>settings.py</code> file.</p>
 </ul>
 <p>With this configuration, you can customize apps without altering their code, ensuring flexibility in the admin interface
 layout.</p>
+<h2 id="2-global-customizations-in-settingspy">2. Global Customizations in <code>settings.py</code></h2>
+<p>You can define various project-wide settings for customizing the Django admin interface in your <code>settings.py</code> file using the <code>DAISY_SETTINGS</code> dictionary. Below is an example configuration:</p>
+<pre><code class="language-python">DAISY_SETTINGS = {
+    'SITE_TITLE': 'Django Admin',  # The title of the site 
+    'SITE_HEADER': 'Administration',  # Header text displayed in the admin panel
+    'INDEX_TITLE': 'Hi, welcome to your dashboard',  # The title for the index page of dashboard
+    'SITE_LOGO': '/static/admin/img/daisyui-logomark.svg',  # Path to the logo image displayed in the sidebar
+    'EXTRA_STYLES': [],  # List of extra stylesheets to be loaded in base.html (optional)
+    'EXTRA_SCRIPTS': [],  # List of extra script URLs to be loaded in base.html (optional)
+    'LOAD_FULL_STYLES': False,  # If True, loads full DaisyUI components in the admin (useful if you have custom template overrides)
+    'SHOW_CHANGELIST_FILTER': False,  # If True, the filter sidebar will open by default on changelist views
+    'APPS_REORDER': {
+        # Custom configurations for third-party apps that can't be modified directly in their `apps.py`
+        'auth': {
+            'icon': 'fa-solid fa-person-military-pointing',  # FontAwesome icon for the 'auth' app
+            'name': 'Authentication',  # Custom name for the 'auth' app
+            'hide': False,  # Whether to hide the 'auth' app from the sidebar (set to True to hide)
+            'app': 'users',  # The actual app to display in the sidebar (e.g., rename 'auth' to 'users')
+            'divider_title': &quot;Auth&quot;,  # Divider title for the 'auth' section
+        },
+        'social_django': {
+            'icon': 'fa-solid fa-users-gear',  # Custom FontAwesome icon for the 'social_django' app
+        },
+    },
+}
+</code></pre>
+<h3 id="explanation_2">Explanation:</h3>
+<ul>
+<li><strong>SITE_TITLE</strong>: Sets the title of your site (visible in the browser tab).</li>
+<li><strong>SITE_HEADER</strong>: The header displayed at the top of the Django admin interface.</li>
+<li><strong>INDEX_TITLE</strong>: The title shown on the dashboard page of the admin panel.</li>
+<li><strong>SITE_LOGO</strong>: Specifies the path to a logo image that appears in the sidebar.</li>
+<li><strong>EXTRA_STYLES</strong>: A list of additional CSS files to be loaded into the admin interface (useful for custom styling).</li>
+<li><strong>EXTRA_SCRIPTS</strong>: A list of additional JavaScript files to be loaded into the admin interface.</li>
+<li><strong>LOAD_FULL_STYLES</strong>: If set to <code>True</code>, loads the full DaisyUI library for styling, which can be useful if you have overridden the admin templates.</li>
+<li><strong>SHOW_CHANGELIST_FILTER</strong>: Controls whether the changelist filter sidebar is shown by default.</li>
+<li><strong>APPS_REORDER</strong>: This allows you to reorder, customize, and modify third-party apps. For example, you can change the name of the <code>auth</code> app to <code>users</code>, provide a custom icon, or hide it from the sidebar entirely.</li>
+</ul>
+<hr />
 
 
 
