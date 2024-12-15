@@ -29,8 +29,8 @@ In your Django project's `settings.py` file, add `daisyui_dashboard` to your `IN
 
 ```python
 INSTALLED_APPS = [
-    'daisyui_dashboard',
-    # 'django.contrib.admin',  # Disable the default admin
+    'daisyui_dashboard', # on top of default django admin 
+    'django.contrib.admin',
     ...
 ]
 ```
