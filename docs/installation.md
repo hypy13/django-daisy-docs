@@ -12,25 +12,20 @@ Django Daisy is compatible with Django versions 3.4 and above, and has been succ
 You can install the Django Daisy package directly via `pip`:
 
 ```bash
-pip install django-daisy
-```
-
-Or install as an editable GitHub source
-
-```bash
-pip install -e git+https://github.com/hypy13/django-daisy.git#egg=django-daisy
+pip install -U django-daisy
 ```
 
 This will install the latest version of Django Daisy along with its dependencies.
 
 ## Step 2: Update `INSTALLED_APPS`
 
-In your Django project's `settings.py` file, add `daisyui_dashboard` to your `INSTALLED_APPS` list. Be sure to comment out the default Django admin app `django.contrib.admin` to avoid conflicts:
+After installation, add `django_daisy` and `django.contrib.humanize` to your `INSTALLED_APPS` in the Django settings file.  
 
 ```python
 INSTALLED_APPS = [
-    'daisyui_dashboard', # on top of default django admin 
+    'django_daisy',
     'django.contrib.admin',
+    'django.contrib.humanize',  # Required for django-daisy
     ...
 ]
 ```
